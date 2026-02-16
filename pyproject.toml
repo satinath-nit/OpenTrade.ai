@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opentrade-ai"
+version = "0.1.0"
+description = "Multi-agent AI stock trading advisor with Streamlit UI and CLI"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "yfinance>=0.2.36",
+    "pandas>=2.0.0",
+    "pandas-ta>=0.3.14b1",
+    "numpy>=1.24.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "streamlit>=1.30.0",
+    "plotly>=5.18.0",
+    "rich>=13.7.0",
+    "click>=8.1.0",
+    "langgraph>=1.0.0",
+    "langchain-core>=1.0.0",
+    "gnews>=0.3.0",
+    "pytrends>=4.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.2.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
