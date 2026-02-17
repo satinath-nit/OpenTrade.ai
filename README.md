@@ -6,10 +6,6 @@ Demo Here-
 
 https://github.com/user-attachments/assets/7979a191-2f83-4041-8673-8175022c62bb
 
-CLI Demo Here-
-
-https://github.com/user-attachments/assets/0418ff52-bd5b-4015-a171-4521368f1ee0
-
 
 ## Architecture
 
