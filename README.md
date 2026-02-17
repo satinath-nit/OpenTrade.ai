@@ -2,12 +2,7 @@
 
 Multi-agent AI stock trading advisor powered by LangGraph, with both a Streamlit visual dashboard and a CLI interface. Uses a local LLM (Ollama or LM Studio) and free stock data from Yahoo Finance.
 
-Demo Here-
-
-https://github.com/user-attachments/assets/7979a191-2f83-4041-8673-8175022c62bb
-
-
-## Architecture
+## Architecture Details
 
 8 specialized AI agents work together in a LangGraph StateGraph pipeline:
 
